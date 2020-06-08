@@ -1,0 +1,65 @@
+button {
+    cursor: pointer;
+    border: 0;
+    background-color: $gray;
+    padding: 10px 30px;
+    color: $white;
+    font-weight: 800;
+    height: 50px;
+}
+
+button[data-action="login"] {
+    background-color: $green;
+}
+
+form {
+    button {
+        width: 100%;
+        background-color: $green;
+    }
+    button:hover {
+        width: 100%;
+        background-color: $darkgreen;
+    }
+}
+
+.add-task-section {
+    h2.btn {
+        cursor: pointer;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-align: center;
+        background-color: $green;
+    }
+
+    h2.btn:hover {
+        background-color: $darkgreen;
+    }
+
+}
+
+.task-list-section {
+    button {
+    	height: 40px;
+        float: right;
+        margin-left: 2px;
+        padding:5px 20px;
+
+    }
+    button[disabled="true"] {
+        background-color: $gray;
+        color:$lightgray;
+
+    }
+}
+
+.event-task-finish {
+    background-color: green;
+}
+
+.event-task-remove {
+    background-color: red;
+}

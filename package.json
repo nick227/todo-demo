@@ -1,0 +1,31 @@
+{
+  "name": "fun-todo-app",
+  "version": "1.0.0",
+  "description": "a demo app",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack --config webpack.config.js",
+    "scss": "node-sass --watch ./src/scss/ -o public/css --output-style compressed"
+  },
+  "keywords": [
+    "js",
+    "php",
+    "ui",
+    "demo"
+  ],
+  "author": "nrios",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

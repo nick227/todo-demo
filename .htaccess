@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^task/([a-z0-9]+)$ api/task/index.php?get=tasks&id=$1 [QSA,L]
+RewriteRule ^task/status api/task/index.php?get=statuses [QSA,L]
+RewriteRule ^task/severity api/task/index.php?get=severities [QSA,L]
+RewriteRule ^task api/task/index.php?id=$1 [QSA,L]
+RewriteRule ^task/([0-9]+)$ api/task/index.php?id=$1 [QSA]

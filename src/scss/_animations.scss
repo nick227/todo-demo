@@ -1,0 +1,31 @@
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.growX{
+  -webkit-animation-name: growX;
+  animation-name: growX;
+  -webkit-animation-duration: 2.65s;
+  animation-duration: 2.66s;	
+}
+@-webkit-keyframes growX {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+@keyframes growX {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}

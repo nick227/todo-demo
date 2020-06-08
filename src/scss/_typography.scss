@@ -1,0 +1,45 @@
+body{
+	font-family: Roboto;
+	font-size: 17px;
+}
+h1{
+	padding: 0;
+	margin: 0;
+	font-family: Pacifico;
+}
+h2{
+	margin:0;
+	padding-bottom: 0;
+	font-size: 1.2em;
+}
+h3{
+	margin:0;
+	padding: 0 5px;
+	font-size: 1.33em;
+}
+p{
+	padding:0 5px;
+	margin:1px 0;
+	font-size: 0.75em
+}
+label {
+    color: $gray;
+    font-size: 0.95em;
+    font-weight: normal;
+}
+input{
+    color: $black;
+    font-size: 1.25em;
+    &:active~label,
+    &:focus~label,
+    &:valid~label {
+        font-size: 0.7em;
+        color: $blue;
+    }
+    &:invalid, &:not(output):-moz-ui-invalid{
+    	box-shadow: none;
+    }
+}
+select{
+	
+}

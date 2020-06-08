@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo App Demo</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A demo todo app"/>
+    <link rel="icon" type="image/png" href="public/images/list.png">
+    <link rel="stylesheet" href="public/css/simplepicker.css">
+	<script src="public/js/simplepicker.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body class="align-middle">
+    <section class="main">
+        <header>
+            <div class="avatar"></div>
+            <h1>Todo Demo</h1><button data-action="login" class="btn-login">Login</button>
+        </header>
+        <div class="loading-bar"></div>
+        <div class="add-task-section hidden">
+        	<h2 class="event-unhide btn" data-target="add-task">Add Task +</h2>
+            <form class="add-task hidden">
+            	<div class="input-group"><input type="text" required="required" name="text" required="required" /><label>Task Description</label></div>
+            	<div class="input-group"><input type="text" required="required" name="target_completion_date" autocomplete="off" class="event-calendar" /><label>Complete Date</label></div>
+            	<select name="severity">
+            		<option value="2" disabled selected>Severity (Default Low)</option>
+    				<option value="2">Low</option>
+    				<option value="1">High</option>
+            	</select>
+            	<input type="hidden" name="status" value="Pending" />
+            	<button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="task-list-section"></div>
+    </section>
+    <script crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=3318491188170293&autoLogAppEvents=1"></script>
+    <script src="public/js/bundle.js"></script>
+  <script>
+  </script>
+</body>
+
+</html>
