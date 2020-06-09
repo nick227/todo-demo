@@ -7,20 +7,17 @@ const login = new Login()
 window.fbAsyncInit = function() {
     login.init(FB)
 }
-
+let url = null
 window.addEventListener("login", function(userData) {
     ui.setData('user', userData.detail)
     ui.update('login')
-    let url = "task/status/all"
-    data.request(url).then(function(res) {
-        ui.setData('statuses', res)
-    })
     url = "task/severity/all"
     data.request(url).then(function(res) {
         ui.setData('severities', res)
     })
     ui.update('load')
     url = "task/" + userData.detail.id
+    console.log(url)
     data.request(url).then(function(tasks) {
         for (var i = 0, length1 = tasks.length; i < length1; i++) {
             let task = tasks[i]
