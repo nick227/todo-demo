@@ -9,17 +9,17 @@ button {
 }
 
 button[data-action="login"] {
-    background-color: $green;
+    background-color: $darkgreen;
 }
 
 form {
     button {
         width: 100%;
-        background-color: $green;
+        background-color: $darkgreen;
     }
     button:hover {
         width: 100%;
-        background-color: $darkgreen;
+        background-color: $green;
     }
 }
 
@@ -32,11 +32,11 @@ form {
         -ms-user-select: none;
         user-select: none;
         text-align: center;
-        background-color: $green;
+        background-color: $darkgreen;
     }
 
     h2.btn:hover {
-        background-color: $darkgreen;
+        background-color: $green;
     }
 
 }
